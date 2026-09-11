@@ -419,6 +419,12 @@ table.data-table tr.total-row td{background:var(--blue); color:#fff; font-family
 table.data-table td.num{text-align:right; font-family:'Baloo 2',sans-serif; font-weight:700; color:var(--blue);}
 table.data-table tr.total-row td.num{color:#fff;}
 
+table.cal-table{min-width:680px;}
+table.cal-table td.cal-day-cell{font-family:'Baloo 2',sans-serif; font-weight:700; color:var(--deep); white-space:nowrap;}
+table.cal-table td .cal-channel{display:inline-block; font-size:11.5px; font-weight:700; color:var(--blue); background:var(--sky-light); padding:3px 10px; border-radius:999px; white-space:nowrap;}
+table.cal-table td .cal-tag{display:inline-block; font-family:'Baloo 2',sans-serif; font-size:10.5px; font-weight:700; color:#fff; background:var(--blue-2); padding:3px 10px; border-radius:999px; white-space:nowrap;}
+table.cal-table td{vertical-align:middle;}
+
 .cal-week{display:flex; flex-direction:column; gap:0;}
 .cal-item{padding:14px 0; border-bottom:1px dashed var(--foam); display:flex; flex-direction:column; gap:5px;}
 .cal-item:last-child{border-bottom:none;}
@@ -1271,12 +1277,17 @@ table.data-table tr.total-row td.num{color:#fff;}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <div class="cal-week">
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Lunes</span><span class="cal-channel">Producción física</span></div><p>Control de calidad del rótulo en lona vinílica y panel con la imagen de APOPI.</p><span class="cal-tag">Preparación de material</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Martes</span><span class="cal-channel">Fachada / Punto de venta</span></div><p>Instalación del rótulo exterior en el portón/fachada para visibilidad inmediata del local.</p><span class="cal-tag">Identificación visual (hito clave)</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Miércoles</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Publicación de foto de la fachada con el rótulo y APOPI: «¡Ya nos podés identificar! Pasá por tu fardo hoy».</p><span class="cal-tag">Informativo</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Viernes</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Arte con escala de precios: «3 fardos por $2.75 · 6 por $5.00 · 12 por $10.00 con APOPI».</p><span class="cal-tag">Promocional (ahorro por volumen)</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Sábado</span><span class="cal-channel">BTL / De mano</span></div><p>Volantes en viviendas del pasaje inmediato con información y contacto de pedidos.</p><span class="cal-tag">Activación vecinal</span></div>
+            <div class="data-table-wrap">
+            <table class="data-table cal-table">
+              <thead><tr><th>Día</th><th>Canal</th><th>Actividad</th><th>Objetivo</th></tr></thead>
+              <tbody>
+              <tr><td class="cal-day-cell">Lunes</td><td><span class="cal-channel">Producción física</span></td><td>Control de calidad del rótulo en lona vinílica y panel con la imagen de APOPI.</td><td><span class="cal-tag">Preparación de material</span></td></tr>
+              <tr><td class="cal-day-cell">Martes</td><td><span class="cal-channel">Fachada / Punto de venta</span></td><td>Instalación del rótulo exterior en el portón/fachada para visibilidad inmediata del local.</td><td><span class="cal-tag">Identificación visual (hito clave)</span></td></tr>
+              <tr><td class="cal-day-cell">Miércoles</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Publicación de foto de la fachada con el rótulo y APOPI: «¡Ya nos podés identificar! Pasá por tu fardo hoy».</td><td><span class="cal-tag">Informativo</span></td></tr>
+              <tr><td class="cal-day-cell">Viernes</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Arte con escala de precios: «3 fardos por $2.75 · 6 por $5.00 · 12 por $10.00 con APOPI».</td><td><span class="cal-tag">Promocional (ahorro por volumen)</span></td></tr>
+              <tr><td class="cal-day-cell">Sábado</td><td><span class="cal-channel">BTL / De mano</span></td><td>Volantes en viviendas del pasaje inmediato con información y contacto de pedidos.</td><td><span class="cal-tag">Activación vecinal</span></td></tr>
+              </tbody>
+            </table>
             </div>
           </div></div>
         </div>
@@ -1285,11 +1296,16 @@ table.data-table tr.total-row td.num{color:#fff;}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <div class="cal-week">
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Lunes</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Arte de APOPI: «¿No querés cargar peso? Escribinos y coordinamos tu entrega de agua en la colonia».</p><span class="cal-tag">Servicio y conveniencia</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Miércoles</span><span class="cal-channel">Comercios aliados</span></div><p>Colocación de afiches en tiendas de conveniencia y comedores cercanos.</p><span class="cal-tag">Publicidad de proximidad</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Jueves</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Foto del producto sellado: «Agua purificada y sellada con la garantía e higiene que merecés».</p><span class="cal-tag">Informativo / confianza</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Sábado</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Recordatorio de fin de semana: «Que no falte agua en tu hogar. Hacé tu pedido hoy sin complicaciones».</p><span class="cal-tag">Recordación de abastecimiento</span></div>
+            <div class="data-table-wrap">
+            <table class="data-table cal-table">
+              <thead><tr><th>Día</th><th>Canal</th><th>Actividad</th><th>Objetivo</th></tr></thead>
+              <tbody>
+              <tr><td class="cal-day-cell">Lunes</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Arte de APOPI: «¿No querés cargar peso? Escribinos y coordinamos tu entrega de agua en la colonia».</td><td><span class="cal-tag">Servicio y conveniencia</span></td></tr>
+              <tr><td class="cal-day-cell">Miércoles</td><td><span class="cal-channel">Comercios aliados</span></td><td>Colocación de afiches en tiendas de conveniencia y comedores cercanos.</td><td><span class="cal-tag">Publicidad de proximidad</span></td></tr>
+              <tr><td class="cal-day-cell">Jueves</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Foto del producto sellado: «Agua purificada y sellada con la garantía e higiene que merecés».</td><td><span class="cal-tag">Informativo / confianza</span></td></tr>
+              <tr><td class="cal-day-cell">Sábado</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Recordatorio de fin de semana: «Que no falte agua en tu hogar. Hacé tu pedido hoy sin complicaciones».</td><td><span class="cal-tag">Recordación de abastecimiento</span></td></tr>
+              </tbody>
+            </table>
             </div>
           </div></div>
         </div>
@@ -1298,11 +1314,16 @@ table.data-table tr.total-row td.num{color:#fff;}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <div class="cal-week">
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Lunes</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Enfoque mayorista y familias: «¿Tenés tienda o consumís bastante? Llevate 12 fardos por $10.00».</p><span class="cal-tag">Promocional (volumen)</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Miércoles</span><span class="cal-channel">Punto de venta</span></div><p>Entrega de tarjetas y volantes a clientes habituales para incentivar la recomendación boca a boca.</p><span class="cal-tag">Recomendación comunitaria</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Viernes</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Mensaje amigable con la mascota APOPI recordando la cercanía del punto de venta.</p><span class="cal-tag">Interacción de marca</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Domingo</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Mensaje nocturno preventivo para apartar pedidos a primera hora del lunes.</p><span class="cal-tag">Planificación de compra</span></div>
+            <div class="data-table-wrap">
+            <table class="data-table cal-table">
+              <thead><tr><th>Día</th><th>Canal</th><th>Actividad</th><th>Objetivo</th></tr></thead>
+              <tbody>
+              <tr><td class="cal-day-cell">Lunes</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Enfoque mayorista y familias: «¿Tenés tienda o consumís bastante? Llevate 12 fardos por $10.00».</td><td><span class="cal-tag">Promocional (volumen)</span></td></tr>
+              <tr><td class="cal-day-cell">Miércoles</td><td><span class="cal-channel">Punto de venta</span></td><td>Entrega de tarjetas y volantes a clientes habituales para incentivar la recomendación boca a boca.</td><td><span class="cal-tag">Recomendación comunitaria</span></td></tr>
+              <tr><td class="cal-day-cell">Viernes</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Mensaje amigable con la mascota APOPI recordando la cercanía del punto de venta.</td><td><span class="cal-tag">Interacción de marca</span></td></tr>
+              <tr><td class="cal-day-cell">Domingo</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Mensaje nocturno preventivo para apartar pedidos a primera hora del lunes.</td><td><span class="cal-tag">Planificación de compra</span></td></tr>
+              </tbody>
+            </table>
             </div>
           </div></div>
         </div>
@@ -1311,11 +1332,16 @@ table.data-table tr.total-row td.num{color:#fff;}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="acc-body"><div class="acc-body-inner">
-            <div class="cal-week">
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Martes</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Mensaje de agradecimiento y beneficios especiales a compradores frecuentes.</p><span class="cal-tag">Fidelización</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Jueves</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Resumen de servicios: ubicación del local, catálogo vigente y botón de pedidos.</p><span class="cal-tag">Informativo integral</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Sábado</span><span class="cal-channel">Estados de WhatsApp</span></div><p>Cierre de mes: «El agua de tu colonia, siempre cerca de ti con AQUAPOPA».</p><span class="cal-tag">Posicionamiento de marca</span></div>
-              <div class="cal-item"><div class="cal-top"><span class="cal-day">Fin de mes</span><span class="cal-channel">Operativo interno</span></div><p>Medición de nuevos clientes captados por el rótulo y volumen de pedidos vía WhatsApp.</p><span class="cal-tag">Evaluación y control</span></div>
+            <div class="data-table-wrap">
+            <table class="data-table cal-table">
+              <thead><tr><th>Día</th><th>Canal</th><th>Actividad</th><th>Objetivo</th></tr></thead>
+              <tbody>
+              <tr><td class="cal-day-cell">Martes</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Mensaje de agradecimiento y beneficios especiales a compradores frecuentes.</td><td><span class="cal-tag">Fidelización</span></td></tr>
+              <tr><td class="cal-day-cell">Jueves</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Resumen de servicios: ubicación del local, catálogo vigente y botón de pedidos.</td><td><span class="cal-tag">Informativo integral</span></td></tr>
+              <tr><td class="cal-day-cell">Sábado</td><td><span class="cal-channel">Estados de WhatsApp</span></td><td>Cierre de mes: «El agua de tu colonia, siempre cerca de ti con AQUAPOPA».</td><td><span class="cal-tag">Posicionamiento de marca</span></td></tr>
+              <tr><td class="cal-day-cell">Fin de mes</td><td><span class="cal-channel">Operativo interno</span></td><td>Medición de nuevos clientes captados por el rótulo y volumen de pedidos vía WhatsApp.</td><td><span class="cal-tag">Evaluación y control</span></td></tr>
+              </tbody>
+            </table>
             </div>
           </div></div>
         </div>
